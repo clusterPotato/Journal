@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03117E19262E148C007B9189 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03117E18262E148C007B9189 /* Entry.swift */; };
+		03117E1E262E1849007B9189 /* EntryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03117E1D262E1849007B9189 /* EntryController.swift */; };
+		03117E22262E1E5F007B9189 /* EntryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03117E21262E1E5F007B9189 /* EntryListTableViewController.swift */; };
+		03117E29262E2385007B9189 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03117E28262E2385007B9189 /* DetailViewController.swift */; };
 		7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA120E259D233600BBD350 /* AppDelegate.swift */; };
 		7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDA1210259D233600BBD350 /* SceneDelegate.swift */; };
 		7EDA1216259D233600BBD350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDA1214259D233600BBD350 /* Main.storyboard */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03117E18262E148C007B9189 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		03117E1D262E1849007B9189 /* EntryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryController.swift; sourceTree = "<group>"; };
+		03117E21262E1E5F007B9189 /* EntryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewController.swift; sourceTree = "<group>"; };
+		03117E28262E2385007B9189 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7EDA120B259D233600BBD350 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDA120E259D233600BBD350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDA1210259D233600BBD350 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +43,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03117E01262E12FD007B9189 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				03117E18262E148C007B9189 /* Entry.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		03117E05262E1323007B9189 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03117E11262E13AB007B9189 /* View Controllers */,
+				03117E06262E1327007B9189 /* Model Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		03117E06262E1327007B9189 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03117E1D262E1849007B9189 /* EntryController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		03117E11262E13AB007B9189 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				03117E21262E1E5F007B9189 /* EntryListTableViewController.swift */,
+				03117E28262E2385007B9189 /* DetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		7EDA1202259D233600BBD350 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +96,8 @@
 		7EDA120D259D233600BBD350 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
+				03117E05262E1323007B9189 /* Controllers */,
+				03117E01262E12FD007B9189 /* Models */,
 				7EDA1223259D234200BBD350 /* Resources */,
 				7EDA1227259D237600BBD350 /* Storyboards */,
 			);
@@ -150,7 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03117E19262E148C007B9189 /* Entry.swift in Sources */,
+				03117E22262E1E5F007B9189 /* EntryListTableViewController.swift in Sources */,
 				7EDA120F259D233600BBD350 /* AppDelegate.swift in Sources */,
+				03117E29262E2385007B9189 /* DetailViewController.swift in Sources */,
+				03117E1E262E1849007B9189 /* EntryController.swift in Sources */,
 				7EDA1211259D233600BBD350 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,13 +347,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KMTDCPCY5V;
+				DEVELOPMENT_TEAM = RCJN47T742;
 				INFOPLIST_FILE = Journal/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CameronStuart.Journal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smithyboi.Journal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -318,13 +366,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KMTDCPCY5V;
+				DEVELOPMENT_TEAM = RCJN47T742;
 				INFOPLIST_FILE = Journal/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.CameronStuart.Journal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.smithyboi.Journal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
